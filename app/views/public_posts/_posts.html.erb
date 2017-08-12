@@ -6,5 +6,5 @@
     	  <p><%= post.content %></p>
     </div>
  
-    <%= link_to "-More-", "#", class: 'btn btn-success' %>
+    <%= link_to "-More-", posts_show_path(post.url), class: 'btn btn-success' %>
 <% end %>
