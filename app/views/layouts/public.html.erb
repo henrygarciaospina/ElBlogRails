@@ -94,7 +94,12 @@
                 <li><%= link_to c.name, posts_category_path(c.id) %></li>
               <% end %>  
             </ul>
-          </div><!--/.well -->          
+          </div><!--/.well -->   
+          <div class="ads">
+            <%= link_to ads_available.link, target: '_blank' do %>
+            <%= image_tag ads_available.image, width: 250 %>
+            <% end %>
+          </div>       
         </div><!--/span-->
       </div><!--/row-->
       
