@@ -17,7 +17,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= post.title %></td>
-        <td><%= post.content %></td>
+        <td style="text-align:justify;"><div class="ocultar"><small><%= post.content %></small></div></td>
         <td><%= post.status %></td>
         <td><%= post.url %></td>
         <td><%= link_to 'Show', post, class: 'btn btn-info' %></td>
