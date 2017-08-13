@@ -20,8 +20,8 @@
         <td style="text-align:justify;"><div class="ocultar"><small><%= post.content %></small></div></td>
         <td><%= post.status %></td>
         <td><%= post.url %></td>
-        <td><%= link_to 'Show', posts_show_path(post.url), class: 'btn btn-info' %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-warning'  %></td>
+        <td><%= link_to 'Show', posts_show_path(post.id), class: 'btn btn-info' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post.id), class: 'btn btn-warning'  %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' },  class: 'btn btn-danger' %></td>
       </tr>
     <% end %>

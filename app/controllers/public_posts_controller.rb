@@ -7,7 +7,7 @@ class PublicPostsController < ApplicationController
 
   def show
   
-    @post = Post.find_by url: (params[:url])
+    @post = Post.find(params[:id])
 
 
     @comments = @post.comments
